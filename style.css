@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(rgb(0, 121, 250) rgb(166, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #fe00bf53;
+    width: 400px;
+    height: 580px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(137, 43, 226, 0.438);
+    padding: 20px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    color: rgb(95, 0, 184);
+    text-shadow: 20px 10px 25px;
+    margin-bottom: 25px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.text{
+    font-size: 20px;
+    color: rgb(118, 0, 173);
+    margin-bottom: 20px;
+}
+
+.signature{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(223, 130, 0);
+}
+
+.heart{
+    width: 25px;
+    height: 25px;
+    background-color: #710202;
+    position: absolute;
+    rotate: 45deg;
+    right: 0;
+    scale: 0.8;
+}
+
+.heart::before, .heart::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #710202;
+    position: absolute;
+
+}
+
+.heart::before{
+    left: -15px;
+}
+
+.heart::after{
+    top: -15px;
+}
